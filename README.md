@@ -11,3 +11,7 @@ Base library of initially required blocks. This lib deliver blocks `meta`, `meta
 * [js](#js)
 * [image](#image)
 * [link](#link)
+
+## Shortcut attributes
+
+Shortcut attributes is attributes which is not required to be written into block's `attrs` object.
