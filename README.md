@@ -4,7 +4,7 @@ Base library of initially required blocks. This lib deliver blocks `meta`, `meta
 
 ## Blocks list
 
-* [page](#page) (with elements: [head](#head), [title](title) and [body](#body))
+* [page](#page) (with elements: [head](#head), [title](#title) and [body](#body))
 * [meta](#meta) 
 * [metalink](#metalink)
 * [css](#css)
@@ -74,4 +74,71 @@ Shortcut attributes: `class`
     elem: 'body',
     content: [/*…*/]
 }
+```
+
+
+### meta
+
+Tag: `meta`
+
+Usual meta tags.
+
+**Usage:**
+```js
+{ block: 'meta', attrs: { charset: 'utf-8' }}
+```
+
+### metalink
+
+Tag: `link`
+
+Use for favicons and microformates.
+
+**Usage:**
+```js
+{ block: 'metalink', url: '/favicon.ico', attrs: { rel: 'icon', type: 'image/x-icon' }}
+```
+
+### css
+
+Include CSS stylesheet. Prop `url` transforming to `href`.
+
+Tag: `link`
+
+**Usage:**
+```js
+{ block: 'css', url: 'index.css' }
+```
+
+### js
+
+Tag: `script`
+
+Include JS script. Prop `url` transforming to `src`.
+
+**Usage:**
+```js
+{ block: 'js', url: 'index.js' }
+```
+
+### image
+
+Tag: `img`
+
+Usual image. Prop `url` transforming to `src`.
+
+**Usage:**
+```js
+{ block: 'image', url: 'image.jpg' }
+```
+
+### link
+
+Tag: `a`
+
+Usual link (anchor). Prop `url` transforming to `href`.
+
+**Usage:**
+```js
+{ block: 'link', url: 'https://google.com', content: 'Google' }
 ```
